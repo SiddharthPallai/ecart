@@ -17,6 +17,8 @@ import java.util.Optional;
 public class AuthenticationServiceImpl implements AuthenticationService{
     @Autowired
     UserRepo userRepo;
+    @Autowired
+    AuthorizationService authenticationService;
 
     @Override
     public ApiResponse<User> authenticate(LoginDto loginDto) {
@@ -26,5 +28,6 @@ public class AuthenticationServiceImpl implements AuthenticationService{
         }else{
             return new ApiResponse(401,"Login Failure!",null);
         }
+       // authenticationService.authorize()
     }
 }
