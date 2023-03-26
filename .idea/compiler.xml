@@ -11,7 +11,7 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="ecart" target="1.8" />
+      <module name="ecart" target="9" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">

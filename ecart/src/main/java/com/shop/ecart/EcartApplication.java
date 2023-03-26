@@ -9,3 +9,4 @@ public class EcartApplication {
 		SpringApplication.run(EcartApplication.class, args);
 	}
 }
+
